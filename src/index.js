@@ -22,6 +22,7 @@ const { epsagon } = require('@adobe/helix-epsagon');
 function main(params = {}) {
   const {
     __ow_logger: log,
+    LOG_LEVEL: level,
   } = params;
 
   log.error('log.error');
@@ -32,7 +33,7 @@ function main(params = {}) {
   log.silly('log.silly');
 
   return {
-    body: `Done. Level: ${log.logger.level}\n`,
+    body: `Done. LOG_LEVEL parameter: ${level}. Logger level: ${log.logger.level}.\n`,
   };
 }
 
