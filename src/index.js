@@ -32,7 +32,7 @@ function main(params = {}) {
   log.silly('log.silly');
 
   return {
-    body: 'Done.',
+    body: `Done. Level: ${log.logger.level}\n`,
   };
 }
 
