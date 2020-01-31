@@ -24,14 +24,14 @@ function main(params = {}) {
     __ow_logger: log,
   } = params;
 
-  log.error('log.error');
-  log.warn('log.warn');
-  log.info('log.info');
-  log.debug('log.debug');
   log.trace('log.trace');
+  log.debug('log.debug');
+  log.info('log.info');
+  log.warn('log.warn');
+  log.error('log.error');
 
   return {
-    body: 'Done.',
+    body: 'Done 1.4.9 - reverse with trace',
   };
 }
 
