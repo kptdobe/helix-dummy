@@ -21,7 +21,7 @@
     "name": "helix-services-private/helix-dummy@${version}",
     "linksPackage": "helix-services",
     "params": {
-      "LOG_LEVEL": "debug"
+      "LOG_LEVEL": "trace"
     }
   },
   "repository": {
