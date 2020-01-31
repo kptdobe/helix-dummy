@@ -19,9 +19,19 @@ const { epsagon } = require('@adobe/helix-epsagon');
  * @param {string} name name of the person to greet
  * @returns {object} a greeting
  */
-function main({ name = 'world' }) {
+function main(params = {}) {
+  const {
+    __ow_logger: log,
+  } = params;
+
+  log.error('log.error');
+  log.warn('log.warn');
+  log.info('log.info');
+  log.debug('log.debug');
+  log.trace('log.trace');
+
   return {
-    body: `Hello, ${name}.`,
+    body: 'Done.',
   };
 }
 
