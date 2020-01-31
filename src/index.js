@@ -29,6 +29,7 @@ function main(params = {}) {
   log.info('log.info');
   log.debug('log.debug');
   log.trace('log.trace');
+  log.silly('log.silly');
 
   return {
     body: 'Done.',
